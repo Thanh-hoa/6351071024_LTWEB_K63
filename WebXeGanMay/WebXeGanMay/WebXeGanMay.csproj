@@ -1,0 +1,445 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F151646C-26DA-46CE-A682-5773F0671AF2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebXeGanMay</RootNamespace>
+    <AssemblyName>WebXeGanMay</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44393</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\css\chitiet.css" />
+    <Content Include="content\css\cssweb.css" />
+    <Content Include="content\css\CUB.css" />
+    <Content Include="content\css\dk.css" />
+    <Content Include="content\css\dn.css" />
+    <Content Include="content\css\GSX-S150.css" />
+    <Content Include="content\css\honda.css" />
+    <Content Include="content\css\lh2.css" />
+    <Content Include="content\css\lienhe.css" />
+    <Content Include="content\css\slide.css" />
+    <Content Include="content\css\trangchu.css" />
+    <Content Include="content\Images\2.png" />
+    <Content Include="content\Images\256-256-3a1eef40f04875d93dd6545f2f1b727e-youtube.png" />
+    <Content Include="content\Images\a.jpg" />
+    <Content Include="content\Images\a1.jpg" />
+    <Content Include="content\Images\a2.png" />
+    <Content Include="content\Images\a3.png" />
+    <Content Include="content\Images\a4.png" />
+    <Content Include="content\Images\a5.png" />
+    <Content Include="content\Images\axo.jpg" />
+    <Content Include="content\Images\az.jpg" />
+    <Content Include="content\Images\az2.jpg" />
+    <Content Include="content\Images\best_2131633976-1.jpeg" />
+    <Content Include="content\Images\blade-t-6b78.jpg" />
+    <Content Include="content\Images\center-gsx150.png" />
+    <Content Include="content\Images\Chonmua.png" />
+    <Content Include="content\Images\cuoi.png" />
+    <Content Include="content\Images\d.png" />
+    <Content Include="content\Images\dangnhap.jpg" />
+    <Content Include="content\Images\dau.png" />
+    <Content Include="content\Images\Dong-Co.png" />
+    <Content Include="content\Images\duoi.png" />
+    <Content Include="content\Images\facebook.png" />
+    <Content Include="content\Images\FB.jpg" />
+    <Content Include="content\Images\fz.jpg" />
+    <Content Include="content\Images\fz2.jpg" />
+    <Content Include="content\Images\gia-xe-honda-super-cub-c125-monkey-125-motosaigon-39.jpg" />
+    <Content Include="content\Images\Giohang.gif" />
+    <Content Include="content\Images\gmail.png" />
+    <Content Include="content\Images\gsx-3.png" />
+    <Content Include="content\Images\gsx150-2.png" />
+    <Content Include="content\Images\gsx150-ket-cau.png" />
+    <Content Include="content\Images\gsx150-tskt.png" />
+    <Content Include="content\Images\gsx150.png" />
+    <Content Include="content\Images\home_icon.png" />
+    <Content Include="content\Images\Honda-Blade-110-2019-phiên-bản-mới-MotoSaigon.vn-4.jpg" />
+    <Content Include="content\Images\honda-icb.png" />
+    <Content Include="content\Images\Honda-Wave-125i-2019-6.jpg" />
+    <Content Include="content\Images\IMG_001221.jpg" />
+    <Content Include="content\Images\j.jpg" />
+    <Content Include="content\Images\j2.jpg" />
+    <Content Include="content\Images\k.png" />
+    <Content Include="content\Images\ket-cau.png" />
+    <Content Include="content\Images\l.jpg" />
+    <Content Include="content\Images\l2.jpg" />
+    <Content Include="content\Images\l3.jpg" />
+    <Content Include="content\Images\list.png" />
+    <Content Include="content\Images\logo.png" />
+    <Content Include="content\Images\m.jpg" />
+    <Content Include="content\Images\m2.jpg" />
+    <Content Include="content\Images\mat.png" />
+    <Content Include="content\Images\mt.jpg" />
+    <Content Include="content\Images\mx.jpg" />
+    <Content Include="content\Images\mx2.png" />
+    <Content Include="content\Images\n.jpg" />
+    <Content Include="content\Images\n2.jpg" />
+    <Content Include="content\Images\piaggio-icb.png" />
+    <Content Include="content\Images\px.jpg" />
+    <Content Include="content\Images\px2.jpg" />
+    <Content Include="content\Images\r.jpg" />
+    <Content Include="content\Images\r2.jpg" />
+    <Content Include="content\Images\S150-LOGO.png" />
+    <Content Include="content\Images\search_mobile.png" />
+    <Content Include="content\Images\sh.jpg" />
+    <Content Include="content\Images\sh2.jpg" />
+    <Content Include="content\Images\sh3.jpg" />
+    <Content Include="content\Images\si.jpg" />
+    <Content Include="content\Images\si2.jpg" />
+    <Content Include="content\Images\suzuki-icb.png" />
+    <Content Include="content\Images\sym-icb.png" />
+    <Content Include="content\Images\than.png" />
+    <Content Include="content\Images\thiet-ke.png" />
+    <Content Include="content\Images\top-banner-1.png" />
+    <Content Include="content\Images\top-banner-2.png" />
+    <Content Include="content\Images\ts.png" />
+    <Content Include="content\Images\ts2.png" />
+    <Content Include="content\Images\tskt.png" />
+    <Content Include="content\Images\vi.jpg" />
+    <Content Include="content\Images\vi2.jpg" />
+    <Content Include="content\Images\w.jpg" />
+    <Content Include="content\Images\w2.png" />
+    <Content Include="content\Images\wave-125i-thái-lan-e1557221627412.jpg" />
+    <Content Include="content\Images\web-logo.png" />
+    <Content Include="content\Images\xe-1.jpg" />
+    <Content Include="content\Images\XE\acruzo.png" />
+    <Content Include="content\Images\XE\address110fi.jpg" />
+    <Content Include="content\Images\XE\amigo50.png" />
+    <Content Include="content\Images\XE\angela50.png" />
+    <Content Include="content\Images\XE\axelo125.jpg" />
+    <Content Include="content\Images\XE\elegant50.png" />
+    <Content Include="content\Images\XE\elizabeth.png" />
+    <Content Include="content\Images\XE\exciter 150 kyniem.png" />
+    <Content Include="content\Images\XE\Future_125cc.png" />
+    <Content Include="content\Images\XE\fz.jpg" />
+    <Content Include="content\Images\XE\galaxy-sr115.png" />
+    <Content Include="content\Images\XE\GD110HU.jpg" />
+    <Content Include="content\Images\XE\Grande Premium.png" />
+    <Content Include="content\Images\XE\GSX-S150.jpg" />
+    <Content Include="content\Images\XE\gz150-a.jpg" />
+    <Content Include="content\Images\XE\Honda\4514790_Xe_Tinhte_SH_2.jpg" />
+    <Content Include="content\Images\XE\Honda\Blade110cc.png" />
+    <Content Include="content\Images\XE\Honda\chi-tiet-xe-may-honda-wave-125i-2017-gia-32-trieu.jpg" />
+    <Content Include="content\Images\XE\Honda\danh-gia-honda-air-blade-2015-gia-xe-va-chi-tiet-hinh-anh-457-1420225983-54a6edbf31871.jpg" />
+    <Content Include="content\Images\XE\Honda\danh-gia-xe-future-2016-honda-hinh-anh-gia-ban-moi-nhat-1.jpg" />
+    <Content Include="content\Images\XE\Honda\Future_125cc.png" />
+    <Content Include="content\Images\XE\Honda\Lead-Thumb.png" />
+    <Content Include="content\Images\XE\Honda\Monkey-Yellow.png" />
+    <Content Include="content\Images\XE\Honda\MSX125ccpng.png" />
+    <Content Include="content\Images\XE\Honda\PCX_125-150_Thumb.png" />
+    <Content Include="content\Images\XE\Honda\PCX_Hybrid.png" />
+    <Content Include="content\Images\XE\Honda\Rebel500.png" />
+    <Content Include="content\Images\XE\Honda\SHModepng.png" />
+    <Content Include="content\Images\XE\Honda\SH_125_150_Bac.png" />
+    <Content Include="content\Images\XE\Honda\SH_300_Xam_Den.png" />
+    <Content Include="content\Images\XE\Honda\super cub c125.png" />
+    <Content Include="content\Images\XE\Honda\vision-1443.jpg" />
+    <Content Include="content\Images\XE\Honda\Vision_Den_Mo.png" />
+    <Content Include="content\Images\XE\Honda\Wavel_Alpha_110cc.png" />
+    <Content Include="content\Images\XE\Honda\Wave_RSX_fi110cc.png" />
+    <Content Include="content\Images\XE\Honda\Winner_Thumb.png" />
+    <Content Include="content\Images\XE\Honda\Đánh-giá-xe-Honda-Blade-110-2016-hình-ảnh-giá-bán-thị-trường-7.jpg" />
+    <Content Include="content\Images\XE\jupiter.png" />
+    <Content Include="content\Images\XE\Lead-Thumb.png" />
+    <Content Include="content\Images\XE\liberty u23.png" />
+    <Content Include="content\Images\XE\medley abs 125.png" />
+    <Content Include="content\Images\XE\medley abs se.png" />
+    <Content Include="content\Images\XE\medleyABS 150.png" />
+    <Content Include="content\Images\XE\Monkey-Yellow.png" />
+    <Content Include="content\Images\XE\MSX125ccpng.png" />
+    <Content Include="content\Images\XE\PCX_Hybrid.png" />
+    <Content Include="content\Images\XE\Piaggio\gia-xe-piaggio-fly-t-2d88.jpg" />
+    <Content Include="content\Images\XE\Piaggio\liberty u23.png" />
+    <Content Include="content\Images\XE\Piaggio\medley abs 125.png" />
+    <Content Include="content\Images\XE\Piaggio\medley abs se.png" />
+    <Content Include="content\Images\XE\Piaggio\medleyABS 150.png" />
+    <Content Include="content\Images\XE\Piaggio\piaggio_liberty_abs_125_iGet_mau_trang_0.png" />
+    <Content Include="content\Images\XE\Piaggio\zip.png" />
+    <Content Include="content\Images\XE\Suzuki\08-viva-115-fi-9b1b5b7cd6178858c6b23643f079c261.jpg" />
+    <Content Include="content\Images\XE\Suzuki\500x400-Si-FI-Anni-20-years-004.png" />
+    <Content Include="content\Images\XE\Suzuki\address110fi.jpg" />
+    <Content Include="content\Images\XE\Suzuki\axelo125.jpg" />
+    <Content Include="content\Images\XE\Suzuki\GD110HU.jpg" />
+    <Content Include="content\Images\XE\Suzuki\GSX-S150.jpg" />
+    <Content Include="content\Images\XE\Suzuki\GSX150 - BANDIT.png" />
+    <Content Include="content\Images\XE\Suzuki\gz150-a.jpg" />
+    <Content Include="content\Images\XE\Suzuki\hayate125.jpg" />
+    <Content Include="content\Images\XE\Suzuki\impulsẹfi.jpg" />
+    <Content Include="content\Images\XE\Suzuki\RAIDER R150 FI.jpg" />
+    <Content Include="content\Images\XE\Suzuki\revo110.jpg" />
+    <Content Include="content\Images\XE\Suzuki\xanh-den.jpg" />
+    <Content Include="content\Images\XE\Sym\amigo50.png" />
+    <Content Include="content\Images\XE\Sym\angel 110r.png" />
+    <Content Include="content\Images\XE\Sym\angela50.png" />
+    <Content Include="content\Images\XE\Sym\Attila-V Smart Idle.png" />
+    <Content Include="content\Images\XE\Sym\elegant 50.png" />
+    <Content Include="content\Images\XE\Sym\elegant50.png" />
+    <Content Include="content\Images\XE\Sym\elite50.png" />
+    <Content Include="content\Images\XE\Sym\elizabeth.png" />
+    <Content Include="content\Images\XE\Sym\fancy125efi.png" />
+    <Content Include="content\Images\XE\Sym\galaxy-sr115.png" />
+    <Content Include="content\Images\XE\Sym\galaxy50.png" />
+    <Content Include="content\Images\XE\Sym\husky-classic125.png" />
+    <Content Include="content\Images\XE\Sym\shark.jpg" />
+    <Content Include="content\Images\XE\Sym\star sr 170.png" />
+    <Content Include="content\Images\XE\Sym\venus125efi.png" />
+    <Content Include="content\Images\XE\Yamaha\acruzo.png" />
+    <Content Include="content\Images\XE\Yamaha\exciter 150 kyniem.png" />
+    <Content Include="content\Images\XE\Yamaha\exciter 150 RC.png" />
+    <Content Include="content\Images\XE\Yamaha\FreeGo S.png" />
+    <Content Include="content\Images\XE\Yamaha\fz.jpg" />
+    <Content Include="content\Images\XE\Yamaha\Grande Deluxepng.png" />
+    <Content Include="content\Images\XE\Yamaha\Grande Premium.png" />
+    <Content Include="content\Images\XE\Yamaha\Janus Standard.png" />
+    <Content Include="content\Images\XE\Yamaha\jupiter.png" />
+    <Content Include="content\Images\XE\Yamaha\mt03.png" />
+    <Content Include="content\Images\XE\Yamaha\nvx.jpg" />
+    <Content Include="content\Images\XE\Yamaha\sirius FI RC.png" />
+    <Content Include="content\Images\XE\Yamaha\sirius.png" />
+    <Content Include="content\Images\XE\Yamaha\TFX 150.png" />
+    <Content Include="content\Images\XE\Yamaha\yamaha-y135lc-2017-1.jpg" />
+    <Content Include="content\Images\XE\Yamaha\YZF-R15.png" />
+    <Content Include="content\Images\XE\zip.png" />
+    <Content Include="content\Images\y.jpg" />
+    <Content Include="content\Images\y2.jpg" />
+    <Content Include="content\Images\yamaha-icb.png" />
+    <Content Include="content\Images\youtube-icon-vector-21082515.jpg" />
+    <Content Include="content\Images\youtube.png" />
+    <Content Include="content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\dbQLXeGanMay.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbQLXeGanMay.edmx</DependentUpon>
+      <LastGenOutput>dbQLXeGanMay.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\dbQLXeGanMay.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbQLXeGanMay.edmx</DependentUpon>
+      <LastGenOutput>dbQLXeGanMay.cs</LastGenOutput>
+    </Content>
+    <Content Include="script\chitiet.js" />
+    <Content Include="script\jquery-1.9.1.min.js" />
+    <Content Include="script\Slider.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHITIETDONTHANG.cs">
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbQLXeGanMay.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbQLXeGanMay.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbQLXeGanMay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbQLXeGanMay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbQLXeGanMay.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DONDATHANG.cs">
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HANGSANXUAT.cs">
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KHACHHANG.cs">
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOAIXE.cs">
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NHAPHANPHOI.cs">
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SANXUATXE.cs">
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\XEGANMAY.cs">
+      <DependentUpon>dbQLXeGanMay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="content\template.dwt" />
+    <EntityDeploy Include="Models\dbQLXeGanMay.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbQLXeGanMay.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\dbQLXeGanMay.edmx.diagram">
+      <DependentUpon>dbQLXeGanMay.edmx</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutUser.cshtml" />
+    <Content Include="Views\Home\XeHonDa.cshtml" />
+    <Content Include="Views\Home\XeYAMAHA.cshtml" />
+    <Content Include="Views\Home\XeSUZUKI.cshtml" />
+    <Content Include="Views\Home\XeSYM.cshtml" />
+    <Content Include="Views\Home\XePIAGGIO.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
+    <Content Include="Views\Store\Index.cshtml" />
+    <Content Include="Views\Store\Menu.cshtml" />
+    <Content Include="Views\Store\NPP.cshtml" />
+    <Content Include="Views\Store\SPTTheoMenu.cshtml" />
+    <Content Include="Views\Store\SPTNhaPP.cshtml" />
+    <Content Include="Views\Store\Detail.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="font\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65473</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44393/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebXeGanMay.Models.XEGANMAY>
+@{
+    ViewBag.Title = "XeYAMAHA";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<article>
+    <section>
+        
+        <br><br>
+        <div id="danhsachxe">
+            @foreach (var item in Model)
+            {
+                <div>
+                    <a href="@Url.Action("Detail", "Home" , new {id=  item.MaXe })"><img class="hinhxe" src="~/content/Images/XE/Yamaha/@item.Anhbia"></a>
+                    <p class="tenxe"><a href="Exciter.html">@item.TenXe</a></p>
+                </div>
+            }
+        </div>
+        <!-- InstanceEndEditable -->
+
+    </section>
+   
+</article>

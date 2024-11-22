@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|d:\\it\\thuchanhweb\\webxeganmay\\webxeganmay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|D:\\IT\\ThucHanhWeb\\WebXeGanMay\\webxeganmay\\views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|d:\\it\\thuchanhweb\\webxeganmay\\webxeganmay\\content\\css\\trangchu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\content\\css\\trangchu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|d:\\it\\thuchanhweb\\webxeganmay\\webxeganmay\\views\\store\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\views\\store\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|d:\\it\\thuchanhweb\\webxeganmay\\webxeganmay\\views\\store\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\views\\store\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|d:\\it\\thuchanhweb\\webxeganmay\\webxeganmay\\views\\store\\spttheomenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\views\\store\\spttheomenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|d:\\it\\thuchanhweb\\webxeganmay\\webxeganmay\\views\\store\\npp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\views\\store\\npp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|D:\\IT\\ThucHanhWeb\\WebXeGanMay\\webxeganmay\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|D:\\IT\\ThucHanhWeb\\WebXeGanMay\\webxeganmay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|d:\\it\\thuchanhweb\\webxeganmay\\webxeganmay\\views\\store\\sptnhapp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\views\\store\\sptnhapp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|d:\\it\\thuchanhweb\\webxeganmay\\webxeganmay\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F151646C-26DA-46CE-A682-5773F0671AF2}|WebXeGanMay\\WebXeGanMay.csproj|solutionrelative:webxeganmay\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebXeGanMay\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T16:16:59.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "trangchu.css",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\content\\css\\trangchu.css",
+              "RelativeDocumentMoniker": "WebXeGanMay\\content\\css\\trangchu.css",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\content\\css\\trangchu.css",
+              "RelativeToolTip": "WebXeGanMay\\content\\css\\trangchu.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-22T15:53:05.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\Detail.cshtml",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Views\\Store\\Detail.cshtml",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\Detail.cshtml",
+              "RelativeToolTip": "WebXeGanMay\\Views\\Store\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:44:00.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SPTNhaPP.cshtml",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\SPTNhaPP.cshtml",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Views\\Store\\SPTNhaPP.cshtml",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\SPTNhaPP.cshtml",
+              "RelativeToolTip": "WebXeGanMay\\Views\\Store\\SPTNhaPP.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:35:27.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SPTTheoMenu.cshtml",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\SPTTheoMenu.cshtml",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Views\\Store\\SPTTheoMenu.cshtml",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\SPTTheoMenu.cshtml",
+              "RelativeToolTip": "WebXeGanMay\\Views\\Store\\SPTTheoMenu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:28:14.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NPP.cshtml",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\NPP.cshtml",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Views\\Store\\NPP.cshtml",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\NPP.cshtml",
+              "RelativeToolTip": "WebXeGanMay\\Views\\Store\\NPP.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:14:03.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\Menu.cshtml",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Views\\Store\\Menu.cshtml",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\Menu.cshtml",
+              "RelativeToolTip": "WebXeGanMay\\Views\\Store\\Menu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:10:49.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Views\\Store\\Index.cshtml",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Store\\Index.cshtml",
+              "RelativeToolTip": "WebXeGanMay\\Views\\Store\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T14:55:13.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_LayoutUser.cshtml",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Views\\Shared\\_LayoutUser.cshtml",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeToolTip": "WebXeGanMay\\Views\\Shared\\_LayoutUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T07:31:07.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StoreController.cs",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Controllers\\StoreController.cs",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Controllers\\StoreController.cs",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Controllers\\StoreController.cs",
+              "RelativeToolTip": "WebXeGanMay\\Controllers\\StoreController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAuwB4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T10:07:52.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebXeGanMay\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\IT\\ThucHanhWeb\\WebXeGanMay\\WebXeGanMay\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebXeGanMay\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:25:26.667Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

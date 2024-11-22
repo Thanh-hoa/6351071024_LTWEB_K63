@@ -1,0 +1,83 @@
+﻿@model WebXeGanMay.Models.XEGANMAY
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>Detail</h2>
+
+ <div class="container">
+    <h4>XEGANMAY</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenXe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenXe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Giaban)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Giaban)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anhbia)
+        </dt>
+
+        <dd>
+            <img src="~/content/Images/XE/@Model.Anhbia" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngaycapnhat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngaycapnhat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soluongton)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluongton)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LOAIXE.TenLoaiXe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAIXE.TenLoaiXe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NHAPHANPHOI.TenNPP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NHAPHANPHOI.TenNPP)
+        </dd>
+
+    </dl>
+</div>
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaXe }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@
