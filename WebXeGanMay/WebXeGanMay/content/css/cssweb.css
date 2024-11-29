@@ -17,8 +17,9 @@ nav{
 	height:45px;
 	width:1349px;
   	top: 0;
-	z-index:10;
+	z-index:1000;
 }
+
 
 
 div#menu{
@@ -127,39 +128,66 @@ div#menu >ul>li>ul>li:hover{
 {
 	cursor:pointer;
 }
-div#menu ul li ul li ul{
-	list-style:none;
-}
-div#menu ul li ul li:hover ul li{
-	display:block;
-	background-color:#1e1e1e;
-	height:25px;
-	width:150px;	
-}
-div#menu ul li ul li:hover ul li:hover{
-	transform:scaleX(1.1);
-	text-shadow:2.5px 2.5px 1px #1e1e1e;
-	background-color:#1e1e1e;
-	border-radius:10px;
-	border-left:1.2px #dd3818 solid;
-	border-right:1.2px #dd3818 solid;
-	transition:all 0.3s ease;
-	position:relative;
-}
-div#menu ul li ul li:hover ul{
-	display:block;
-	background-color:#1e1e1e;
-	height:70px;
-	position:absolute;
-	margin-left:170px;
-	width:150px;
-	margin-top:-30px;
-	
-}
-div#menu ul li ul li ul li{
-	display:none;
+/* Đặt vị trí tương đối cho menu chính */
+nav div#menu ul li {
+	position: relative; /* Để các menu con định vị dựa trên menu cha */
 }
 
+	/* Menu con (dropdown) mặc định ẩn */
+	nav div#menu ul li ul {
+		display: none; /* Ẩn menu con */
+		position: absolute; /* Định vị so với menu cha */
+		top: 100%; /* Canh chỉnh menu con ngay dưới menu cha */
+		left: 0;
+		background-color: #1e1e1e; /* Màu nền menu con */
+		z-index: 1000; /* Đảm bảo menu con hiển thị trên các phần tử khác */
+		list-style: none; /* Xóa dấu đầu dòng */
+		padding: 5px 0;
+		min-width: 150px; /* Đảm bảo kích thước tối thiểu */
+		border-radius: 5px;
+	}
+
+	/* Hiển thị menu con khi rê chuột vào menu cha */
+	nav div#menu ul li:hover > ul {
+		display: block;
+	}
+
+	/* Định dạng các mục trong menu con */
+	nav div#menu ul li ul li {
+		padding: 8px 15px;
+		white-space: nowrap; /* Tránh xuống dòng */
+	}
+
+		nav div#menu ul li ul li a {
+			text-decoration: none; /* Xóa gạch dưới */
+			color: white;
+			font-size: 14px;
+			display: block; /* Đảm bảo toàn bộ mục clickable */
+		}
+
+			/* Hiệu ứng khi rê chuột vào mục con */
+			nav div#menu ul li ul li a:hover {
+				background-color: #dd3818; /* Đổi màu nền */
+				color: #fff;
+			}
+
+		/* Menu con cấp 2 */
+		nav div#menu ul li ul li ul {
+			display: none; /* Mặc định ẩn */
+			position: absolute;
+			top: 0;
+			left: 100%; /* Canh chỉnh bên phải của menu cấp 1 */
+			background-color: #1e1e1e;
+			z-index: 1000;
+			padding: 5px 0;
+			min-width: 150px;
+			border-radius: 5px;
+		}
+
+		/* Hiển thị menu cấp 2 khi rê chuột */
+		nav div#menu ul li ul li:hover > ul {
+			display: block;
+		}
 article{
 	display:table-row;
 	width:1349px;
@@ -171,7 +199,7 @@ aside#right,section{
 }
 section{
 	width:1149px;
-	height:auto;
+	height:700px;
 	padding:20px 10px;
 	background-color:#FFF;
 	

@@ -22,32 +22,32 @@ namespace WebXeGanMay.Controllers
             var product = db.XEGANMAYs.FirstOrDefault(c => c.MaXe == id);
             return View(product);
         }
-        public ActionResult XeHonDa()
-        {
-            var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 1).ToList();
-            return View(ListHonDa);
-        }
-        public ActionResult XeYAMAHA()
-        {
-            var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 2).ToList();
-            return View(ListHonDa);
-        }
-        public ActionResult XeSUZUKI()
-        {
-            var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 3).ToList();
-            return View(ListHonDa);
-        }
-        public ActionResult XeSYM()
-        {
-            var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 4).ToList();
-            return View(ListHonDa);
+        //public ActionResult XeHonDa()
+        //{
+        //    var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 1).ToList();
+        //    return View(ListHonDa);
+        //}
+        //public ActionResult XeYAMAHA()
+        //{
+        //    var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 2).ToList();
+        //    return View(ListHonDa);
+        //}
+        //public ActionResult XeSUZUKI()
+        //{
+        //    var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 3).ToList();
+        //    return View(ListHonDa);
+        //}
+        //public ActionResult XeSYM()
+        //{
+        //    var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 4).ToList();
+        //    return View(ListHonDa);
 
-        }
-        public ActionResult XePIAGGIO()
-        {
-            var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 5).ToList();
-            return View(ListHonDa);
+        //}
+        //public ActionResult XePIAGGIO()
+        //{
+        //    var ListHonDa = db.XEGANMAYs.Where(c => c.MaLX == 5).ToList();
+        //    return View(ListHonDa);
+        //}
 
-        }
     }
 }

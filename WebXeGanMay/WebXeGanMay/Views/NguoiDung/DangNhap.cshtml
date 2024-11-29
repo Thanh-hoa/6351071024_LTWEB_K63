@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Thế giới xe</title>
+    
+    <link href="~/content/css/dn.css?v=@DateTime.Now.Ticks" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="dn">
+        <div class="form">
+            <h2>Đăng nhập</h2>
+            <i class="cach"></i>
+            <form action="@Url.Action("DangNhap", "NguoiDung")" method="post">
+               
+                @if (ViewBag.ThongBao != null)
+                {
+                    <p style="color:red;">@ViewBag.ThongBao</p>
+                }
+
+                <label>Tên đăng nhập</label>
+                <input type="text" name="hoten" placeholder="Nhập tên đăng nhập">
+                @if (ViewData["loi1"] != null)
+                {
+                    <p style="color:red;">@ViewData["loi1"]</p>
+                }
+
+                <label style="margin-right: 22px;">Mật khẩu</label>
+                <input type="password" name="mk" placeholder="Nhập mật khẩu">
+                <input id="submit" type="submit" name="submit" value="Đăng nhập ngay">
+                <a href="@Url.Action("DangKy", "NguoiDung")"><h6>Chưa có tài khoản?</h6></a>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>

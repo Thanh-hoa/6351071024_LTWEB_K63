@@ -5,21 +5,23 @@ using System.Web;
 using System.Web.Mvc;
 using WebXeGanMay.Models;
 
+using PagedList;
+using PagedList.Mvc;
 namespace WebXeGanMay.Controllers
 {
     public class StoreController : Controller
     {
         // GET: Store
        QLBanXeGanMayEntities db = new QLBanXeGanMayEntities();
-        //public ActionResult Index()
-        //{
-        //    var ListNPP = db.NHAPHANPHOIs.Take(5).ToList();
-        //    return PartialView(ListNPP);
-        //}
-        public ActionResult Index()
+     
+        public ActionResult Index(int? page)
         {
-            var ListNPP = db.XEGANMAYs.Take(5).ToList();
-            return View(ListNPP);
+            int pageSize = 5;
+            int pageNum = (page ?? 1);
+
+            //var ListNPP = db.XEGANMAYs.Take(5).ToList();
+            var ListNPP = db.XEGANMAYs.OrderBy(x => x.MaXe).ToList();
+            return View(ListNPP.ToPagedList(pageNum , pageSize));
         }
 
         public ActionResult Menu()
@@ -49,6 +51,7 @@ namespace WebXeGanMay.Controllers
             var product = db.XEGANMAYs.FirstOrDefault(c => c.MaXe == id);
             return View(product);
         }
+      
 
     }
 }

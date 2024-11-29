@@ -51,6 +51,12 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -103,6 +109,7 @@
     <Content Include="content\css\CUB.css" />
     <Content Include="content\css\dk.css" />
     <Content Include="content\css\dn.css" />
+    <Content Include="content\css\gioiHang.css" />
     <Content Include="content\css\GSX-S150.css" />
     <Content Include="content\css\honda.css" />
     <Content Include="content\css\lh2.css" />
@@ -295,6 +302,7 @@
     <Content Include="content\Images\yamaha-icb.png" />
     <Content Include="content\Images\youtube-icon-vector-21082515.jpg" />
     <Content Include="content\Images\youtube.png" />
+    <Content Include="content\PagedList.css" />
     <Content Include="content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Models\dbQLXeGanMay.Context.tt">
@@ -314,7 +322,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Models\GioHang.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NguoiDungController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -387,6 +398,12 @@
     <Content Include="Views\Store\SPTTheoMenu.cshtml" />
     <Content Include="Views\Store\SPTNhaPP.cshtml" />
     <Content Include="Views\Store\Detail.cshtml" />
+    <Content Include="Views\NguoiDung\DangNhap.cshtml" />
+    <Content Include="Views\NguoiDung\DangKy.cshtml" />
+    <Content Include="Views\GioHang\Index.cshtml" />
+    <Content Include="Views\GioHang\GioHangPartVial.cshtml" />
+    <Content Include="Views\GioHang\DonHang.cshtml" />
+    <Content Include="Views\GioHang\Xacnhandonhang.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

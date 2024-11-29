@@ -1,21 +1,26 @@
-﻿@model  IEnumerable<WebXeGanMay.Models.XEGANMAY>
+﻿@using PagedList.Mvc
+@using WebXeGanMay.Models
+@model PagedList.PagedList<WebXeGanMay.Models.XEGANMAY>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    <link href="~/content/css/gioiHang.css?v=@DateTime.Now.Ticks" rel="stylesheet" />
 }
 
-<article>
-    <section>
-        <br><br>
-        <div id="danhsachxe">
-            @foreach (var item in Model)
-            {
-                <div>
-                    <a href="@Url.Action("Detail", "Store" , new {id=  item.MaXe })"><img class="hinhxe" src="~/content/Images/XE/Honda/@item.Anhbia"></a>
-                    <p class="tenxe"><a href="Exciter.html">@item.TenXe</a></p>
-                </div>
-            }
-        </div>
-    </section>
-</article>
 
+<section>
+    <div id="danhsachxe">
+        @foreach (var item in Model)
+        {
+            <div>
+                <a href="@Url.Action("Detail", "Store" , new {id=  item.MaXe })"><img class="hinhxe" src="~/content/Images/XE/@item.Anhbia"></a>
+                <p class="tenxe"><a href="Exciter.html">@item.TenXe</a></p>
+            </div>
+        }
+    </div>
+</section>
+<p>Trang @(Model.PageNumber < Model.PageCount ? Model.PageNumber : 0) / @Model.PageCount</p>
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>

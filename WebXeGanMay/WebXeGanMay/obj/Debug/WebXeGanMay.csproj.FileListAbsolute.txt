@@ -74,3 +74,7 @@ D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\EntityFramework.dll
 D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\EntityFramework.xml
 D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\EntityFramework.SqlServer.dll
 D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\EntityFramework.SqlServer.xml
+D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\PagedList.dll
+D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\PagedList.Mvc.dll
+D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\PagedList.xml
+D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\PagedList.Mvc.xml

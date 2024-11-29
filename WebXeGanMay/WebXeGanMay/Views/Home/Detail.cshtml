@@ -77,7 +77,8 @@
 
     </dl>
 </div>
-@*<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MaXe }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>*@
+<div >
+    <a href=" @Html.ActionLink("Đặt xe", "themGioiHang", new { id = Model.MaXe , url = Request.Url.ToString()}) ">
+      Đặt mua
+    </a>
+</div>

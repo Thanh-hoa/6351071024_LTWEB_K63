@@ -37,5 +37,8 @@
             <dd>@Html.DisplayFor(model => model.NHAPHANPHOI.TenNPP)</dd>
         </div>
     </div>
+    <div>
+        @Html.ActionLink("Đặt xe", "themGioHang", "GioHang", new { id = Model.MaXe, url = Request.Url.ToString() }, new { @class = "btn-datxe" })
+    </div>
 </div>
 

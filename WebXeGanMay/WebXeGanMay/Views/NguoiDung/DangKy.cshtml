@@ -1,0 +1,115 @@
+﻿
+
+@{
+    ViewBag.Title = "DangKy";
+    Layout =null;
+    <link href="~/content/css/cssweb.css" rel="stylesheet" />
+    <link href="~/content/css/dk.css" rel="stylesheet" />
+}
+
+<body>
+
+    <article>
+        <section>
+            <form action="#" method="post" name="dangky" onSubmit="kiemtrathongtin()">
+                <div id="dktv">
+                    <p><font size="4">ĐĂNG KÝ THÀNH VIÊN</font></p>
+                </div>
+                <div id="dangky">
+                    <fieldset id="thongtincn">
+                        <legend><b>Thông tin cá nhân</b></legend>
+                        <table width="700" cellpadding="0" border="0" cellspacing="2">
+                            <tr>
+                                <td width="148" height="24">
+                                    <p>Họ và tên:</p>
+                                </td>
+                                <td>
+                                    <input id="hoten" type="text" name="txthoten">
+                                </td>
+                                <td>@ViewData["Loi1"]</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ngày sinh:
+                                </td>
+                                <td>
+                                    <input width="70" type="date" name="txtngaysinh">
+                                </td>
+                                <td>@ViewData["Loi2"]</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Địa chỉ:
+                                </td>
+                                <td>
+                                    <textarea name="txtdiachi"></textarea>
+                                </td>
+                                <td>@ViewData["Loi3"]</td>
+                            </tr>
+                            <tr>
+                                <td height="23">
+                                    <p>Điện thoại:</p>
+                                </td>
+                                <td>
+                                    <input type="number" name="soDienThoai">
+                                </td>
+                                <td>@ViewData["Loi4"]</td>
+                            </tr>
+                            <tr>
+                                <td height="25">
+                                    Email:
+                                </td>
+                                <td>
+                                    <input id="email" type="email" name="txtemail">
+                                </td>
+                                <td>@ViewData["Loi5"]</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset id="thongtindn">
+                        <legend><b>Thông tin đăng nhập</b></legend>
+                        <table width="700" border="0" cellspacing="2">
+                            <tr>
+                                <td width="155">
+                                    Tên đăng nhập:
+                                </td>
+                                <td>
+                                    <input id="tendangnhap" type="text" name="txttendangnhap">
+                                </td>
+                                <td>@ViewData["Loi6"]</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Mật khẩu:</p>
+                                </td>
+                                <td>
+                                    <input id="matkhau" type="password" name="txtmatkhau">
+                                </td>
+                                <td>@ViewData["Loi7"]</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Nhập lại mật khẩu:
+                                </td>
+                                <td>
+                                    <input id="nhaplaimatkhau" type="password" name="txtnhaplaimatkhau">
+                                </td>
+                                <td>@ViewData["Loi8"]</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <div align="center">
+                        <input type="submit" onClick="return kiemta()" value="Đăng ký">
+                        <input type="reset" value="Hủy">
+                    </div>
+                </div>
+            </form>
+
+        </section>
+    </article>
+
+</body>
+
+
+
+
