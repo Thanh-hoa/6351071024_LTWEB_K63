@@ -33,5 +33,6 @@ namespace WebXeGanMay.Models
         public virtual DbSet<NHAPHANPHOI> NHAPHANPHOIs { get; set; }
         public virtual DbSet<SANXUATXE> SANXUATXEs { get; set; }
         public virtual DbSet<XEGANMAY> XEGANMAYs { get; set; }
+        public virtual DbSet<Admin> Admins { get; set; }
     }
 }

@@ -1,0 +1,91 @@
+﻿@model WebXeGanMay.Models.XEGANMAY
+
+@{
+    ViewBag.Title = "Xoa";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<
+
+<div class="container">
+<h3>Xác nhận thông tin xe máy cần xóa</h3>
+<div>
+
+    <hr />
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    Tên xe
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TenXe)
+                </dd>
+
+                <dt>
+                    Giá Bán
+                </dt>
+
+                <dd>
+                    @string.Format("{0:0,0}", Model.Giaban) VNĐ
+                </dd>
+
+                <dt>
+                    Mô tả
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Mota)
+                </dd>
+
+                <dt>
+                    Hình ảnh
+                </dt>
+
+                <dd>
+                    <img src="~/content/Images/XE/@Model.Anhbia" style="width:200px" />
+                </dd>
+
+                <dt>
+                    Ngày cập nhật
+                </dt>
+
+                <dd>
+                    @string.Format("{0:dd/MM/yyyy}", Model.Ngaycapnhat)
+                </dd>
+
+                <dt>
+                    Số lượng
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Soluongton)
+                </dd>
+
+                <dt>
+                    Loại xe
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.LOAIXE.TenLoaiXe)
+                </dd>
+
+                <dt>
+                    Nhà phân phối
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NHAPHANPHOI.TenNPP)
+                </dd>
+
+            </dl>
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Trở về", "XeMay")
+        </div>
+    }
+</div>
+    </div>

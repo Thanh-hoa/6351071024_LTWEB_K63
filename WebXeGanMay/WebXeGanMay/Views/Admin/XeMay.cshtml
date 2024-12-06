@@ -1,0 +1,85 @@
+﻿@*@model IEnumerable<WebXeGanMay.Models.XEGANMAY>*@
+@using PagedList.Mvc
+@using WebXeGanMay.Models
+@model PagedList.PagedList<WebXeGanMay.Models.XEGANMAY>
+
+@{
+    ViewBag.Title = "XeMay";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    <link href="~/content/css/gioiHang.css" rel="stylesheet" />
+}
+
+<h2> Quản lý thông tin xe máy</h2>
+
+<p>
+    @Html.ActionLink("Thêm Mới", "ThemMoi")
+</p>
+<table class="table">
+    <tr>
+        <th>
+           Tên xe
+        </th>
+        <th>
+            Giá Bán
+        </th>
+        <th>
+          Mô Tả
+        </th>
+        <th>
+            Hình ảnh
+        </th>
+        <th>
+            Ngày cập nhật
+        </th>
+        <th>
+            Số lượng tồn kho
+        </th>
+        <th>
+            Loại xe
+        </th>
+        <th>
+            Tên Nhà phân phối
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenXe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Giaban)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mota)
+            </td>
+            <td>
+                <img src="~/content/Images/XE/@item.Anhbia" style=" width:200px" />
+            <td>
+                @Html.DisplayFor(modelItem => item.Ngaycapnhat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soluongton)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LOAIXE.TenLoaiXe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NHAPHANPHOI.TenNPP)
+            </td>
+            <td>
+                @Html.ActionLink("Chỉnh sửa", "SuaXeMay", new { id = item.MaXe }) |
+                @Html.ActionLink("Chi tiết SP", "ChiTietSanPham", new { id = item.MaXe }) |
+                @Html.ActionLink("Xóa", "Xoa", new { id = item.MaXe })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>Trang @(Model.PageNumber < Model.PageCount ? Model.PageNumber : 0) / @Model.PageCount</p>
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("XeMay", new { page = page }))
+</div>
+

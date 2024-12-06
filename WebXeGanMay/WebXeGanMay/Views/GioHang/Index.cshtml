@@ -35,7 +35,7 @@
                     <td><input type="number" min="1" name="txtSoluong" value="@item.soLuong" style="background-color: yellow" /></td>
                     <td>@String.Format("{0:0,0}", item.sdonGia)</td>
                     <td>@String.Format("{0:0,0}", item.dThanhTien)</td>
-                    <td><a href="@Url.Action("Detail", "Store", new { id = item.smaXe })"> Chi  Tiết</a></td>
+                    <td><a href="@Url.Action("Detail", "Store", new { id = item.smaXe })">Chi  Tiết</a></td>
                     <td><a href="@Url.Action("Xoa", "GioHang", new { id = item.smaXe })"> Xóa</a></td>
                     <td><input type="submit" value="Cập Nhật" /></td>
                 }

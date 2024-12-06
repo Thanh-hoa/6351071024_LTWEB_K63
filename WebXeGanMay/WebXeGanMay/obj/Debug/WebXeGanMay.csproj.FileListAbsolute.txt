@@ -78,3 +78,5 @@ D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\PagedList.dll
 D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\PagedList.Mvc.dll
 D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\PagedList.xml
 D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\PagedList.Mvc.xml
+D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\Newtonsoft.Json.dll
+D:\IT\ThucHanhWeb\WebXeGanMay\WebXeGanMay\bin\Newtonsoft.Json.xml
